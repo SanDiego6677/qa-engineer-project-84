@@ -1,1 +1,291 @@
+---
+test-cases:
+  - summary: |
+      Успешная проверка "Регистрации" на сайте
+    status: fail
 
+bugreports:
+  - summary: |
+      При Регистрации открывается другая вкладка с помощью которой можно зарегистрироваться в Vercel.com 
+    environment: |
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    steps-to-reproduce: 
+      - Заходим на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      - Открываем первую страницу магазина
+      - Нажимаем на кнопку "Log in to comment"
+      - Открывается новая вкладка с возможностью зарегестрироваться в Vercel.com
+    expected-result: |
+      Успешная Регистрация
+    actual-result: |
+      При нажатии на кнопку "Log in to comment" открывается новая вкладка с предложением зарегистрироваться в Vercel.com что к данному сайту не имеет никакого отношения
+---
+test-cases:
+  - summary: |
+      Успешная проверка фильтра "brand"
+    status: fail
+
+bugreports:
+  - summary: |
+      При выбраной категории товаров должен подгружаться "Brand" только из этой категории
+    environment: |
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    steps-to-reproduce: 
+      - Заходим на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      - Открываем любую страницу магазина
+      - Нажимаем на кнопку "Category"
+      - Выбираем другую категорию по кнопке "Category"
+      - Остаются все бренды товаров из всех категорий, фильтр "Brand" не меняется
+    expected-result: |
+      Фильтр "Brand" подгружает бренды только из выбранной категории
+    actual-result: |
+      При выборе категории товаров в фильтре "Brand" остаются все бренды из всех категорий товаров
+---
+test-cases:
+  - summary: |
+      Успешная проверка Адаптивности сайта на различных устройствах
+    status: pass
+
+bugreports: []
+---
+test-cases:
+  - summary: |
+      Успешная проверка фильтра "search"
+    status: fail
+
+bugreports:
+  - summary: |
+      При вводе русских букв в поле "search" поле не подсвечиваться красным цветом
+    environment: |
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    steps-to-reproduce: 
+      - Заходим на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      - Открываем любую страницу магазина
+      - Вводим русские буквы в поле "search"
+      - Поле "search" не подсвечивается красным цветом
+    expected-result: |
+      При вводе русских букв в поле "search" поле подсвечиваться красным цветом
+    actual-result: |
+      При вводе русских букв в поле "search" поле не подсвечиваться красным цветом
+---
+test-cases:
+  - summary: |
+      Успешная проверка кнопок перемещения по сайту
+    status: pass
+
+bugreports: []
+---
+test-cases:
+  - summary: |
+      Успешная проверка фильтра по цене
+    status: fail
+
+bugreports:
+  - summary: |
+      Поле фильтра при вводе любых символов кроме "." и "цифр" не подсвечивается красным цветом
+    environment: |
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    steps-to-reproduce: 
+      - Заходим на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      - Открываем любую страницу магазина
+      - Вводим любые символы кроме "." и цифр"
+      - Поле фильтра по цене не подсвечивается красным цветом
+    expected-result: |
+      Поле фильтра при вводе любых символов кроме "." и "цифр" подсвечивается красным цветом
+    actual-result: |
+      Поле фильтра при вводе любых символов кроме "." и "цифр" не подсвечивается красным цветом
+---
+test-cases:
+  - summary: |
+      Успешная проверка возможности выбора колличества добавленного товаров в "Cart"
+    status: fail
+
+bugreports:
+  - summary: |
+      При переходе в "Cart" у добавленного товара нет возможность изменения колличества с помощью интерактивной кнопки ввиде стрелок
+    environment: |
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    steps-to-reproduce: 
+      - Заходим на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      - Открываем любую страницу магазина
+      - У любого товара нажимаем кнопку "add to cart"
+      - Нажимаем кнопку  "Cart"
+      - У добавленного товара нет возможности изменить колличество с помощью кнопок 
+    expected-result: |
+      При переходе в "Cart" у добавленного товара есть возможность изменения колличества товара с помощью интерактивных стрелок
+    actual-result: |
+      Колличество нельзя изменить , кнопок изменения колличества нет
+---
+test-cases:
+  - summary: |
+      Успешная проверка "Checout"
+    status: fail
+
+bugreports:
+  - summary: |
+      У товаров с длинным названием колличество смещается к цене товара
+    environment: |
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    steps-to-reproduce: 
+      - Заходим на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      - Открываем любую страницу магазина
+      - У любого товара нажимаем кнопку "add to cart"
+      - Нажимаем кнопку  "Cart"
+      - Добавляем несколько товаров с длинным названием
+      - Нажимаем кнопку "Cart"
+      - Нажимаем кнопку "Checout"
+      - У товаров с длинным названием колличество смещается к цене товара
+    expected-result: |
+      В "Checout" у товаров с длинным названием не смещается колличество к цене товара
+    actual-result: |
+      В "Checout" у товаров с длинным названием смещается колличество к цене товара
+---
+test-cases:
+  - summary: |
+      Успешная проверка выхода из "Checout"
+    status: fail
+
+bugreports:
+  - summary: |
+      Нет реакции при нажатии на кнопку "Close" в виде крестика 
+    environment: |
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    steps-to-reproduce: 
+      - Заходим на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      - Открываем любую страницу магазина
+      - У любого товара нажимаем кнопку "add to cart"
+      - Нажимаем кнопку  "Cart"
+      - Нажимаем кнопку "Checout"
+      - Нажимаем на кнопку "Close"
+      - Нажимаем на кнопку "Close" в виде крестика
+      - Кнопка "Close" в виде крестика не реагирует
+    expected-result: |
+      При нажатии "Close" и "Close" в виде крестика можно выйти из "Checout"
+    actual-result: |
+      В нажатии "Close" в виде крестика нельзя выйти из "Checout"
+---
+test-cases:
+  - summary: |
+      Успешная проверка фото в карточке товара
+    status: pass
+
+bugreports: []
+---
+test-cases:
+  - summary: |
+      Успешная проверка отображения иконки при смене языка
+    status: fail
+
+bugreports:
+  - summary: |
+      Нет иконок при смене языка
+    environment: |
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    steps-to-reproduce: 
+      - Заходим на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      - Открываем любую страницу магазина
+      - Нажимаем на кнопку "language"
+      - Нет иконок при смене языка
+    expected-result: |
+      При нажатии кнопки "language" отображаются все иконки у разных языков
+    actual-result: |
+      При нажатии кнопки "language" не отображаются иконки у разных языков
+---
+test-cases:
+  - summary: |
+      Успешная проверка стиля кнопки "Add to cart"
+    status: pass
+
+bugreports: []
+---
+test-cases:
+  - summary: |
+      Успешная проверка интернет-магазина при смене языка
+    status: fail
+
+bugreports:
+  - summary: |
+      При смене языка не меняется название и описание товара
+    environment: |
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    steps-to-reproduce: 
+      - Заходим на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      - Открываем любую страницу магазина
+      - Нажимаем на кнопку "language"
+      - Выбираем нужный нам язык
+      - При смене языка меняются только инструменты магазина но название и описание товаров не меняется 
+    expected-result: |
+      У выбранного языка меняются инструменты сайта, название и описание товара
+    actual-result: |
+      При смене языка не меняется название и описание товара
+---
+test-cases:
+  - summary: |
+      Успешная проверка краткой информации товара
+    status: fail
+
+bugreports:
+  - summary: |
+      Не показывает рейтинг товаров
+    environment: |
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    steps-to-reproduce: 
+      - Заходим на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      - Открываем любую страницу магазина
+      - При проверке просмотра товара должа быть информация ;
+      - Название товара
+      - Рейтинг товара
+      - Цена со скидкой и без скидки
+      - Возможность добавить в корзину
+      - Краткое описание товара
+      - Колличество товара
+      - Фото товара  (не должно расстягиваться)
+    expected-result: |
+      У товаров есть вся краткая информация
+    actual-result: |
+      В кратком описании товаров нет рейтинга товара
+---
+test-cases:
+  - summary: |
+      Успешная проверка сайта при перемещении по страницам
+    status: fail
+
+bugreports:
+  - summary: |
+      Страница не перемещается вверх
+    environment: |
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    steps-to-reproduce: 
+      - Заходим на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      - Открываем страницу магазина
+      - Свайпаем страницу вниз
+      - Перемещаемся по сайту с помощью кнопок "previos" "next"
+    expected-result: |
+      Страница магазина автоматически перемещается вверх
+    actual-result: |
+      Страница вверх не перемещается
+---
+test-cases:
+  - summary: |
+      Успешная проверка сайта при перемещении по страницам с фильтром "category"
+    status: fail
+
+bugreports:
+  - summary: |
+      Категория товаров не сбрасывается
+    environment: |
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    steps-to-reproduce: 
+      - Заходим на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+      - Открываем первую страницу магазина
+      - Выбираем любую категорию товаров
+      - Перемещаемся по сайту с помощью кнопок "previos" "next"
+      - При открытии первой страницы кнопка "next" пропадает что не даёт нам возможность переместиться дальше
+      - При открытии второй страницы магазина и выбрав категорию так же пропадает кнопка "next" но есть возможность нажать "previos" 
+      - При нажатии кнопки "previos" категория остаётся но страница указана с другим товаром 
+      - При нажатии на кнопку "category" можно выбрать категорию из данной страницы магазина
+      - Выбираем категорию из данной страницы магазина, кнопка "next" не появилась
+      - Можно нажать на кнопку "Store" сайт обновляется и кнопка "next" появляется
+    expected-result: |
+      Категория товаров автоматически сбрасывается при смене магазина
+    actual-result: |
+      Категория товаров не сбрасывается
