@@ -1,8 +1,4 @@
 - summary: |
-    Успешная "Регистрация" на сайте
-status: fail
----
-- summary: |
     Успешный поиск товаров по ключевому слову "Iphone X"
 status: pass
 ---
@@ -39,11 +35,15 @@ status: pass
 status: pass
 ---
 - summary: |
-    Успешная проверка фильтра "search"
+    Успешная проверка удаления товаров из "Cart"
+status: pass
+---
+- summary: |
+    Успешная проверка рамки поля фильтра "search"
 status: fail
 ---
 - summary: |
-    Успешная проверка фильтра по цене
+    Успешная проверка рамки поля фильтра по цене
 status: fail
 ---
 - summary: |
@@ -55,19 +55,15 @@ status: fail
 status: fail
 ---
 - summary: |
-    Успешная проверка выхода из "Checout"
+    Успешная проверка верстки модального окна "Checout"
+status: fail
+---
+- summary: |
+    Успешная проверка закрытия модального окна "Checout"
 status: fail
 ---
 - summary: |
     Успешная проверка фото в карточке товара
-status: fail
----
-- summary: |
-    Успешная проверка отображение иконки при смене языка
-status: fail
----
-- summary: |
-    Успешная проверка "Стиль кнопки Add to cart"
 status: fail
 ---
 - summary: |
