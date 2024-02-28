@@ -1,17 +1,3 @@
----
-- summary: |
-   Нет возможности "Зарегистрироваться"
-  environment: |
-    Microsoft Edge Версия 121.0.2277.98 (Официальная сборка) (64-разрядная версия)
-    ОС Windows 11 pro
-  steps-to-reproduce: |
-    1. Зайти на страницу https://hexlet-products-store.vercel.app/
-    2. Открыть первую страницу
-  expected-result: |
-    В правом верхнем углу есть кнопка "Регистрация"
-  actual-result: |
-    Нет кнопки "Регистрация" 
----
 - summary: |
    При смене категории товаров не подгружается фильтр "brand" 
   environment: |
