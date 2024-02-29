@@ -7,7 +7,7 @@ status: pass
 status: pass
 ---
 - summary: |
-   Успешная проверка фильтра "Brand"
+   Успешная проверка фильтра "brand" на отображение при выборе "Category"
 status: fail
 ---
 - summary: |
@@ -39,7 +39,7 @@ status: pass
 status: pass
 ---
 - summary: |
-    Успешная проверка рамки поля фильтра "search"
+    Успешная проверка рамки поля "search"
 status: fail
 ---
 - summary: |
