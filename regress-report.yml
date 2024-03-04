@@ -104,11 +104,11 @@ bugreports:
       - Открываем любую страницу магазина
       - Вводим русские буквы в поле "search"
       - Страница магазина не меняется , все товары остаются на странице и нет надписи Nothing found!
-    expected-result: 
-      - На странице появляется надпись Nothing found!
-    actual-result: |
-       При вводе русских букв в поле "search" все товары остаются на станице и нет надписи Nothing found!
-       Ошибка изображена на скриншоте regress testing seach
+    expected-result: |
+       На странице появляется надпись Nothing found!
+    actual-result: 
+      - При вводе русских букв в поле "search" все товары остаются на станице и нет надписи Nothing found!
+      - Ошибка изображена на скриншоте regress testing seach
 ---
 test-cases:
   - summary: |
