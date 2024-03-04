@@ -81,3 +81,7 @@ status: fail
 - summary: |
     Успешная проверка сайта при перемещении по страницам с фильтром "category"
 status: fail
+---
+- summary: |
+    Успешная поиск товара в фильтре по цене
+status: fail
