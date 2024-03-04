@@ -106,7 +106,7 @@ bugreports:
       - Страница магазина не меняется , все товары остаются на странице и нет надписи Nothing found!
     expected-result: |
        На странице появляется надпись Nothing found!
-    actual-result: 
+    actual-result:
       - При вводе русских букв в поле "search" все товары остаются на станице и нет надписи Nothing found!
       - Ошибка изображена на скриншоте regress testing seach
 ---
@@ -120,7 +120,7 @@ bugreports:
       Категория товаров не сбрасывается
     environment: |
       https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    steps-to-reproduce: 
+    steps-to-reproduce:
       - Заходим на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       - Открываем первую страницу магазина
       - Выбираем любую категорию товаров
@@ -133,6 +133,6 @@ bugreports:
       - Можно нажать на кнопку "Store" сайт обновляется и кнопка "next" появляется
     expected-result: |
       Категория товаров автоматически сбрасывается при смене магазина
-    actual-result: 
+    actual-result:
       - Категория товаров не сбрасывается
       - Ошибка изображена на скриншоте regress testing moving , regress testing moving2 , regress testing moving3 , regress testing moving4
