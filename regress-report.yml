@@ -149,7 +149,7 @@ bugreports:
       При вводе русских букв в поле "search" все товары остаются на странице , нет надписи Nothing found!
     environment: |
       https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    steps-to-reproduce: 
+    steps-to-reproduce: |
       - Заходим на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       - Открываем любую страницу магазина
       - Вводим русские буквы в поле "search"
@@ -170,7 +170,7 @@ bugreports:
       Категория товаров не сбрасывается
     environment: |
       https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    steps-to-reproduce:
+    steps-to-reproduce: |
       - Заходим на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       - Открываем первую страницу магазина
       - Выбираем любую категорию товаров
