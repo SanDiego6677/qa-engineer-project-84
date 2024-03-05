@@ -1,94 +1,144 @@
 ---
 test-cases:
   - summary: |
+      Успешный поиск товаров по ключевому слову "Iphone X"
+    status: pass
+
+bugreports: []
+
+test-cases:
+  - summary: |
+      Успешный поиск товаров по категории
+    status: pass
+
+bugreports: []
+
+test-cases:
+  - summary: |
+      Успешная проверка Граничных значений в фильтре товаров по цене
+    status: pass
+
+bugreports: []
+
+test-cases:
+  - summary: |
+      Успешная проверка сайта на Кроссбраузерность
+    status: pass
+
+bugreports: []
+
+test-cases:
+  - summary: |
+      Успешная проверка позможности просмотра подробной информации товара на сайте
+    status: pass
+
+bugreports: []
+
+test-cases:
+  - summary: |
+      Успешная проверка добавления товаров в "Cart"
+    status: pass
+
+bugreports: []
+
+test-cases:
+  - summary: |
+      Успешная проверка удаления товаров из "Cart"
+    status: pass
+
+bugreports: []
+
+test-cases:
+  - summary: |
       Успешная проверка Адаптивности сайта на различных устройствах
     status: pass
 
 bugreports: []
----
+
 test-cases:
   - summary: |
       Успешная проверка кнопок перемещения по сайту
     status: pass
 
 bugreports: []
----
+
 test-cases:
   - summary: |
       Успешная проверка фото в карточке товара
     status: pass
 
 bugreports: []
----
+
 test-cases:
   - summary: |
       Успешная проверка фильтра "brand" на отображение при выборе "Category"
     status: fail
 
 bugreports: []
----
+
 test-cases:
   - summary: |
       Успешная проверка рамки поля "search"
     status: fail
 
 bugreports: []
----
+
 test-cases:
   - summary: |
       Успешная проверка возможности выбора колличества добавленного товаров в "Cart"
     status: fail
 
 bugreports: []
----
+
 test-cases:
   - summary: |
       Успешная проверка "Checout"
     status: fail
 
 bugreports: []
----
+
 test-cases:
   - summary: |
       Успешная проверка закрытия модального окна "Checout"
     status: fail
 
 bugreports: []
----
-- summary: |
-    Успешная проверка верстки модального окна "Checout"
+
+test-cases:
+  - summary: |
+      Успешная проверка верстки модального окна "Checout"
     status: fail
 
 bugreports: []
----
+
 test-cases:
   - summary: |
       Успешная проверка интернет-магазина при смене языка
     status: fail
 
 bugreports: []
----
+
 test-cases:
   - summary: |
       Успешная проверка краткой информации товара
     status: fail
 
 bugreports: []
----
+
 test-cases:
   - summary: |
       Успешная проверка сайта при перемещении по страницам
     status: fail
 
 bugreports: []
----
+
 test-cases:
   - summary: |
       Успешный поиск товара в фильтре по цене
     status: fail
 
 bugreports: []
----
+
 test-cases:
   - summary: |
       Успешная проверка рамки поля "search"
@@ -96,7 +146,7 @@ test-cases:
 
 bugreports:
   - summary: |
-       При вводе русских букв в поле "search" все товары остаются на странице , нет надписи Nothing found!
+      При вводе русских букв в поле "search" все товары остаются на странице , нет надписи Nothing found!
     environment: |
       https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
     steps-to-reproduce: 
@@ -105,11 +155,11 @@ bugreports:
       - Вводим русские буквы в поле "search"
       - Страница магазина не меняется , все товары остаются на странице и нет надписи Nothing found!
     expected-result: |
-       На странице появляется надпись Nothing found!
-    actual-result:
-      - При вводе русских букв в поле "search" все товары остаются на станице и нет надписи Nothing found!
-      - Ошибка изображена на скриншоте regress testing seach
----
+      На странице появляется надпись Nothing found!
+    actual-result: |
+      При вводе русских букв в поле "search" все товары остаются на станице и нет надписи Nothing found!
+      Ошибка изображена на скриншоте regress testing seach
+
 test-cases:
   - summary: |
       Успешная проверка сайта при перемещении по страницам с фильтром "category"
@@ -133,6 +183,6 @@ bugreports:
       - Можно нажать на кнопку "Store" сайт обновляется и кнопка "next" появляется
     expected-result: |
       Категория товаров автоматически сбрасывается при смене магазина
-    actual-result:
-      - Категория товаров не сбрасывается
-      - Ошибка изображена на скриншоте regress testing moving , regress testing moving2 , regress testing moving3 , regress testing moving4
+    actual-result: |
+      Категория товаров не сбрасывается
+      Ошибка изображена на скриншоте regress testing moving , regress testing moving2 , regress testing moving3 , regress testing moving4
