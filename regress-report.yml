@@ -4,50 +4,70 @@ test-cases:
       Успешный поиск товаров по ключевому слову "Iphone X"
   status: pass
 
+bugreports: []
+
 test-cases:
   - summary: |
       Успешный поиск товаров по категории
   status: pass
+
+bugreports: []
 
 test-cases:
   - summary: |
       Успешная проверка Граничных значений в фильтре товаров по цене
   status: pass
 
+bugreports: []
+
 test-cases:
   - summary: |
       Успешная проверка сайта на Кроссбраузерность
   status: pass
+
+bugreports: []
 
 test-cases:
   - summary: |
       Успешная проверка позможности просмотра подробной информации товара на сайте
   status: pass
 
+bugreports: []
+
 test-cases:
   - summary: |
       Успешная проверка добавления товаров в "Cart"
   status: pass
+
+bugreports: []
 
 test-cases:
   - summary: |
       Успешная проверка удаления товаров из "Cart"
   status: pass
 
+bugreports: []
+
 test-cases:
   - summary: |
       Успешная проверка Адаптивности сайта на различных устройствах
   status: pass
+
+bugreports: []
 
 test-cases:
   - summary: |
       Успешная проверка кнопок перемещения по сайту
   status: pass
 
+bugreports: []
+
 test-cases:
   - summary: |
       Успешная проверка фото в карточке товара
     status: pass
+
+bugreports: []
 
 test-cases:
   - summary: |
