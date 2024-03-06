@@ -1,8 +1,8 @@
 ---
 test-cases:
-  - summary: |
-      Успешный поиск товаров по ключевому слову "Iphone X"
-    status: pass
+- summary: |
+    Успешный поиск товаров по ключевому слову "Iphone X"
+  status: pass
 
 test-cases:
   - summary: |
