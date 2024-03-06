@@ -5,131 +5,131 @@ test-cases:
   status: pass
 
 test-cases:
-   - summary: |
+  - summary: |
       Успешный поиск товаров по категории
-   status: pass
+  status: pass
 
 test-cases:
-   - summary: |
+  - summary: |
       Успешная проверка Граничных значений в фильтре товаров по цене
-   status: pass
+  status: pass
 
 test-cases:
-   - summary: |
+  - summary: |
       Успешная проверка сайта на Кроссбраузерность
-   status: pass
+  status: pass
 
 test-cases:
-   - summary: |
+  - summary: |
       Успешная проверка позможности просмотра подробной информации товара на сайте
-   status: pass
+  status: pass
 
 test-cases:
-   - summary: |
+  - summary: |
       Успешная проверка добавления товаров в "Cart"
-   status: pass
+  status: pass
 
 test-cases:
-   - summary: |
+  - summary: |
       Успешная проверка удаления товаров из "Cart"
-   status: pass
+  status: pass
 
 test-cases:
-   - summary: |
+  - summary: |
       Успешная проверка Адаптивности сайта на различных устройствах
-   status: pass
+  status: pass
 
 test-cases:
-   - summary: |
+  - summary: |
       Успешная проверка кнопок перемещения по сайту
-   status: pass
+  status: pass
 
 test-cases:
-   - summary: |
+  - summary: |
       Успешная проверка фото в карточке товара
-   status: pass
+  status: pass
 
 test-cases:
-   - summary: |
+  - summary: |
       Успешная проверка фильтра "brand" на отображение при выборе "Category"
-   status: fail
+  status: fail
 
 test-cases:
-   - summary: |
+  - summary: |
       Успешная проверка рамки поля "search"
-   status: fail
+  status: fail
 
 test-cases:
-   - summary: |
+  - summary: |
       Успешная проверка возможности выбора колличества добавленного товаров в "Cart"
-   status: fail
+  status: fail
 
 test-cases:
-   - summary: |
+  - summary: |
       Успешная проверка "Checout"
-   status: fail
+  status: fail
 
 test-cases:
-   - summary: |
+  - summary: |
       Успешная проверка закрытия модального окна "Checout"
-   status: fail
+  status: fail
 
 test-cases:
-   - summary: |
+  - summary: |
       Успешная проверка верстки модального окна "Checout"
-   status: fail
+  status: fail
 
 test-cases:
-   - summary: |
+  - summary: |
       Успешная проверка интернет-магазина при смене языка
-   status: fail
+  status: fail
 
 test-cases:
-   - summary: |
+  - summary: |
       Успешная проверка краткой информации товара
-   status: fail
+  status: fail
 
 test-cases:
-   - summary: |
+  - summary: |
       Успешная проверка сайта при перемещении по страницам
-   status: fail
+  status: fail
 
- test-cases:
-   - summary: |
+test-cases:
+  - summary: |
       Успешный поиск товара в фильтре по цене
-   status: fail
+  status: fail
 
 test-cases:
-   - summary: |
+  - summary: |
       Успешная проверка рамки поля "search"
-   status: fail
+  status: fail
 
 test-cases:
-   - summary: |
+  - summary: |
       Успешная проверка сайта при перемещении по страницам с фильтром "category"
-   status: fail
+  status: fail
 
 bugreports:
-   - summary: |
+  - summary: |
       При вводе русских букв в поле "search" все товары остаются на странице , нет надписи Nothing found!
-   environment: |
+  environment: |
       https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-   steps-to-reproduce:
+  steps-to-reproduce:
       - Заходим на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       - Открываем любую страницу магазина
       - Вводим русские буквы в поле "search"
       - Страница магазина не меняется , все товары остаются на странице и нет надписи Nothing found!
-   expected-result: |
+  expected-result: |
       На странице появляется надпись Nothing found!
-   actual-result: |
+  actual-result: |
       При вводе русских букв в поле "search" все товары остаются на станице и нет надписи Nothing found!
       Ошибка изображена на скриншоте regress testing seach
 
-   - summary: |
+  - summary: |
       Категория товаров не сбрасывается
-   environment: |
+  environment: |
       https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-   steps-to-reproduce:
+  steps-to-reproduce:
       - Заходим на сайт https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
       - Открываем первую страницу магазина
       - Выбираем любую категорию товаров
