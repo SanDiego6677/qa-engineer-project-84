@@ -76,7 +76,6 @@ test-cases:
     Успешная проверка сайта при перемещении по страницам
   status: fail
 
-test-cases:
 - summary: |
     Успешный поиск товара в фильтре по цене
   status: fail
