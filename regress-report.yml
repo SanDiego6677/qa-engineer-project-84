@@ -1,95 +1,95 @@
 ---
- test-cases:
+test-cases:
    - summary: |
       Успешный поиск товаров по ключевому слову "Iphone X"
    status: pass
 
- test-cases:
+test-cases:
    - summary: |
       Успешный поиск товаров по категории
    status: pass
 
- test-cases:
+test-cases:
    - summary: |
       Успешная проверка Граничных значений в фильтре товаров по цене
    status: pass
 
- test-cases:
+test-cases:
    - summary: |
       Успешная проверка сайта на Кроссбраузерность
    status: pass
 
- test-cases:
+test-cases:
    - summary: |
       Успешная проверка позможности просмотра подробной информации товара на сайте
    status: pass
 
- test-cases:
+test-cases:
    - summary: |
       Успешная проверка добавления товаров в "Cart"
    status: pass
 
- test-cases:
+test-cases:
    - summary: |
       Успешная проверка удаления товаров из "Cart"
    status: pass
 
- test-cases:
+test-cases:
    - summary: |
       Успешная проверка Адаптивности сайта на различных устройствах
    status: pass
 
- test-cases:
+test-cases:
    - summary: |
       Успешная проверка кнопок перемещения по сайту
    status: pass
 
- test-cases:
+test-cases:
    - summary: |
       Успешная проверка фото в карточке товара
    status: pass
 
- test-cases:
+test-cases:
    - summary: |
       Успешная проверка фильтра "brand" на отображение при выборе "Category"
    status: fail
 
- test-cases:
+test-cases:
    - summary: |
       Успешная проверка рамки поля "search"
    status: fail
 
- test-cases:
+test-cases:
    - summary: |
       Успешная проверка возможности выбора колличества добавленного товаров в "Cart"
    status: fail
 
- test-cases:
+test-cases:
    - summary: |
       Успешная проверка "Checout"
    status: fail
 
- test-cases:
+test-cases:
    - summary: |
       Успешная проверка закрытия модального окна "Checout"
    status: fail
 
- test-cases:
+test-cases:
    - summary: |
       Успешная проверка верстки модального окна "Checout"
    status: fail
 
- test-cases:
+test-cases:
    - summary: |
       Успешная проверка интернет-магазина при смене языка
    status: fail
 
- test-cases:
+test-cases:
    - summary: |
       Успешная проверка краткой информации товара
    status: fail
 
- test-cases:
+test-cases:
    - summary: |
       Успешная проверка сайта при перемещении по страницам
    status: fail
@@ -99,17 +99,17 @@
       Успешный поиск товара в фильтре по цене
    status: fail
 
- test-cases:
+test-cases:
    - summary: |
       Успешная проверка рамки поля "search"
    status: fail
 
- test-cases:
+test-cases:
    - summary: |
       Успешная проверка сайта при перемещении по страницам с фильтром "category"
    status: fail
 
- bugreports:
+bugreports:
    - summary: |
       При вводе русских букв в поле "search" все товары остаются на странице , нет надписи Nothing found!
    environment: |
