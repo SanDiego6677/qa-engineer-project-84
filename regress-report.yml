@@ -2,112 +2,112 @@
 test-cases:
   - summary: |
       Успешный поиск товаров по ключевому слову "Iphone X"
-  status: pass
+status: pass
 
 test-cases:
   - summary: |
       Успешный поиск товаров по категории
-  status: pass
+status: pass
 
 test-cases:
   - summary: |
       Успешная проверка Граничных значений в фильтре товаров по цене
-  status: pass
+status: pass
 
 test-cases:
   - summary: |
       Успешная проверка сайта на Кроссбраузерность
-  status: pass
+status: pass
 
 test-cases:
   - summary: |
       Успешная проверка позможности просмотра подробной информации товара на сайте
-  status: pass
+status: pass
 
 test-cases:
   - summary: |
       Успешная проверка добавления товаров в "Cart"
-  status: pass
+status: pass
 
 test-cases:
   - summary: |
       Успешная проверка удаления товаров из "Cart"
-  status: pass
+status: pass
 
 test-cases:
   - summary: |
       Успешная проверка Адаптивности сайта на различных устройствах
-  status: pass
+status: pass
 
 test-cases:
   - summary: |
       Успешная проверка кнопок перемещения по сайту
-  status: pass
+status: pass
 
 test-cases:
   - summary: |
       Успешная проверка фото в карточке товара
-  status: pass
+status: pass
 
 test-cases:
   - summary: |
       Успешная проверка фильтра "brand" на отображение при выборе "Category"
-  status: fail
+status: fail
 
 test-cases:
   - summary: |
       Успешная проверка рамки поля "search"
-  status: fail
+status: fail
 
 test-cases:
   - summary: |
       Успешная проверка возможности выбора колличества добавленного товаров в "Cart"
-  status: fail
+status: fail
 
 test-cases:
   - summary: |
       Успешная проверка "Checout"
-  status: fail
+status: fail
 
 test-cases:
   - summary: |
       Успешная проверка закрытия модального окна "Checout"
-  status: fail
+status: fail
 
 test-cases:
   - summary: |
       Успешная проверка верстки модального окна "Checout"
-  status: fail
+status: fail
 
 test-cases:
   - summary: |
       Успешная проверка интернет-магазина при смене языка
-  status: fail
+status: fail
 
 test-cases:
   - summary: |
       Успешная проверка краткой информации товара
-  status: fail
+status: fail
 
 test-cases:
   - summary: |
       Успешная проверка сайта при перемещении по страницам
-  status: fail
+status: fail
 
 test-cases:
   - summary: |
       Успешный поиск товара в фильтре по цене
-  status: fail
+status: fail
 
 test-cases:
   - summary: |
       Успешная проверка рамки поля "search"
-  status: fail
+status: fail
 
 test-cases:
   - summary: |
       Успешная проверка сайта при перемещении по страницам с фильтром "category"
-  status: fail
+status: fail
 
 bugreports:
   - summary: |
