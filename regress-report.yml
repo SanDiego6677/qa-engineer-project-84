@@ -47,7 +47,7 @@ test-cases:
 test-cases:
   - summary: |
       Успешная проверка фото в карточке товара
-    status: pass
+  status: pass
 
 test-cases:
   - summary: |
