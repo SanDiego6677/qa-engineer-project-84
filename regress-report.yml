@@ -45,11 +45,7 @@ test-cases:
   status: fail
 
 - summary: |
-    Успешная проверка рамки поля "search"
-  status: fail
-
-- summary: |
-    Успешная проверка возможности выбора колличества добавленного товаров в "Cart"
+    Успешная проверка валидации формы ввода "search"
   status: fail
 
 - summary: |
@@ -81,7 +77,7 @@ test-cases:
   status: fail
 
 - summary: |
-    Успешная проверка рамки поля "search"
+    Успешная проверка валидации формы фильтра по цене
   status: fail
 
 - summary: |
