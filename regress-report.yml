@@ -88,7 +88,7 @@ test-cases:
     Успешная проверка "Checout" в режиме разработчика на наличие ошибок
   status: fail
 
-  - summary: |
+- summary: |
     Успешная проверка "language"
   status: fail
   
